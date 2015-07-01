@@ -1,0 +1,33 @@
+{
+  "name": "node-audio-rms",
+  "version": "1.0.0",
+  "description": "compute root mean square of ndarray of audio samples",
+  "main": "index.js",
+  "dependencies": {
+    "cwise": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livejs/node-audio-rms.git"
+  },
+  "keywords": [
+    "audio",
+    "rms",
+    "node",
+    "ndarray",
+    "samples",
+    "root",
+    "mean",
+    "square"
+  ],
+  "author": "ahdinosaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livejs/node-audio-rms/issues"
+  },
+  "homepage": "https://github.com/livejs/node-audio-rms#readme"
+}
