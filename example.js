@@ -19,6 +19,6 @@ audioReadStream()
 */
 .pipe(audioRms())
 .pipe(through.obj(function (rms, enc, cb) {
-  console.log(rms)
+  console.log(rms.data[0])
   cb(null)
 }))
