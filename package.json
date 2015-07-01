@@ -4,9 +4,15 @@
   "description": "compute root mean square of ndarray of audio samples",
   "main": "index.js",
   "dependencies": {
-    "cwise": "^1.0.5"
+    "cwise": "^1.0.5",
+    "through2": "^2.0.0",
+    "zeros": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "frame-hop": "ahdinosaur/frame-hop",
+    "ndarray": "^1.0.18",
+    "read-audio": "^2.0.3"
+  },
   "scripts": {
     "test": "tape test.js"
   },
