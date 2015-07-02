@@ -11,7 +11,8 @@
   "devDependencies": {
     "frame-hop": "ahdinosaur/frame-hop",
     "ndarray": "^1.0.18",
-    "read-audio": "^2.0.3"
+    "read-audio": "^2.0.3",
+    "terminal-bar": "0.0.3"
   },
   "scripts": {
     "test": "tape test.js"

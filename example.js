@@ -3,22 +3,26 @@ var audioReadStream = require('read-audio')
 var frameHop = require('frame-hop')
 var audioRms = require('./')
 var Ndarray = require('ndarray')
+var terminalBar = require('terminal-bar')
 
-audioReadStream()
-/*
+var audio = audioReadStream({
+  buffer: 256
+})
+
+audio
+.pipe(audioRms())
 .pipe(through.obj(function (audio, enc, cb) {
   cb(null, audio.data)
 }))
 .pipe(frameHop({
-  frameSize: 4096,
-  hopSize: 4096
+  frameSize: 128,
+  hopSize: 1
 }))
-.pipe(through.obj(function (frame, enc, cb) {
-  cb(null, Ndarray(frame, [1, frame.length]))
-}))
-*/
-.pipe(audioRms())
-.pipe(through.obj(function (rms, enc, cb) {
-  console.log(rms.data[0])
+.pipe(through.obj(function (data, enc, cb) {
+  var arr = [].slice.call(data)
+  console.log(terminalBar(arr, {
+    width: process.stdout.columns - 1,
+    height: process.stdout.rows
+  }))
   cb(null)
 }))

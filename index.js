@@ -45,19 +45,16 @@ function audioRms () {
   var square = cwise({
     args: ['array'],
     body: function (x) {
-      x = Math.pow(x, 2) || 0
+      x = Math.pow(x, 2)
     }
   })
 
   return through.obj(function (audio, enc, cb) {
-    //var rms = zeros(audio.shape, audio.stride)
     square(audio)
-//    console.log(audio)
     audio = mean(audio)
     root(audio)
-
     cb(null, audio)
-    //root(mean(square(audio))))
+    //cb(null, root(mean(square(audio))))
   })
 }
 
