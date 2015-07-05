@@ -4,7 +4,8 @@
   "description": "compute root mean square of ndarray of audio samples",
   "main": "index.js",
   "dependencies": {
-    "cwise": "^1.0.5",
+    "ndarray-fill": "^1.0.1",
+    "ndarray-ops": "^1.2.2",
     "through2": "^2.0.0",
     "zeros": "^1.0.0"
   },
