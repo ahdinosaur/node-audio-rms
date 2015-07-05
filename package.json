@@ -16,8 +16,8 @@
     "frame-hop": "ahdinosaur/frame-hop",
     "lodash.range": "^3.0.1",
     "ndarray": "^1.0.18",
-    "ndsamples-generate": "ahdinosaur/ndsamples-generate",
-    "read-audio": "^2.0.3",
+    "ndsamples-generate": "^1.0.0",
+    "read-audio": "^6.0.0",
     "tape": "^4.0.0",
     "terminal-bar": "0.0.3"
   },
