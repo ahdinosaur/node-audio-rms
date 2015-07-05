@@ -19,6 +19,7 @@ function audioRms () {
     return audio
   }
 
+  /*
   var sumOp = cwise({
     args: ['array', 'array'],
     body: function (sum, val) {
@@ -41,6 +42,19 @@ function audioRms () {
     divOp(sum, audio.shape[audio.shape.length - 1])
     
     return sum
+  }
+  */
+
+  var mean = function mean (array) {
+    var length = array.shape[1]
+    var val = zeros([length])
+    for (var i = 0; i < length; i++) {
+      for (var j = 0; j < array.shape[1]; j++) {
+        val.set(i, val.get(i) + array.get(i, j))
+      }
+      val.set(i, val.get(i) / length)
+    }
+    return val
   }
 
   var squareOp = cwise({
