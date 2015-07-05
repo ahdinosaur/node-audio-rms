@@ -9,9 +9,14 @@
     "zeros": "^1.0.0"
   },
   "devDependencies": {
+    "almost-equal": "^1.0.0",
+    "fract": "^0.1.0",
     "frame-hop": "ahdinosaur/frame-hop",
+    "lodash.range": "^3.0.1",
     "ndarray": "^1.0.18",
+    "ndsamples-generate": "ahdinosaur/ndsamples-generate",
     "read-audio": "^2.0.3",
+    "tape": "^4.0.0",
     "terminal-bar": "0.0.3"
   },
   "scripts": {
