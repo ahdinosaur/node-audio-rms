@@ -4,6 +4,7 @@
   "description": "transform stream to compute root mean square of ndarray of audio samples",
   "main": "index.js",
   "dependencies": {
+    "lodash.map": "^3.1.4",
     "ndarray-fill": "^1.0.1",
     "ndarray-ops": "^1.2.2",
     "through2": "^2.0.0",
