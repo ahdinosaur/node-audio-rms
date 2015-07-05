@@ -73,7 +73,7 @@ test('rms of generated waves', function (t) {
       var expected = fixture[1]
       t.ok(
         almostEqual(actual, expected, 0.01),
-        fixture[0].name + " has expected rms of " + expected
+        fixture[0].name + " expected rms: " + expected + "; actual: " + actual
       )
       if (seen < testsPerFixture) {
         seen++
