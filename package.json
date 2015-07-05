@@ -1,7 +1,7 @@
 {
   "name": "node-audio-rms",
-  "version": "1.0.0",
-  "description": "compute root mean square of ndarray of audio samples",
+  "version": "1.0.1",
+  "description": "transform stream to compute root mean square of ndarray of audio samples",
   "main": "index.js",
   "dependencies": {
     "ndarray-fill": "^1.0.1",
